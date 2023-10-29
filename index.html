@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Nosifer&family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">Menu</span>
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="">
+                <h2>oplover's </h2></h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Story</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button class="login-btn">Log In</button>          
+        </nav>
+    </header>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Silahkan login kembali menggunakan email dan password saat mendaftar</p>
+            </div>
+            <div class="form-content">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label for="">password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Created Account</h2>
+                <p>Untuk bergabung bersama komunitas One Piece Indonesia, silahkan daftarkan diri anda menggunakan email</p>
+            </div>
+            <div class="form-content">
+                <h2>Signup</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label for="">Enter Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label for="">Created password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Term & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <footer class="footer">
+        <ul>2023 all reserve. design by 
+            <a href="https://github.com/sapuijuk29"><i class='bx bxl-github'></i></a>
+            <i class='bx bxl-instagram-alt'></i>
+        </ul>              
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
